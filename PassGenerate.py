@@ -12,11 +12,11 @@ def generate_password(num_letters, num_symbols, num_numbers):
     # Generate random numbers
     numbers = random.choices(string.digits, k=num_numbers)
 
-    # Combine all the characters and shuffle them to create a password
+    # Combine all the characters
     password_list = letters + symbols + numbers
     random.shuffle(password_list)
 
-    # Join the list to form the final password
+    
     password = ''.join(password_list)
     return password
 
